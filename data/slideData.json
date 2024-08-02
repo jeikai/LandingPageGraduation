@@ -1,0 +1,33 @@
+[
+    {
+      "backgroundImage": "./images/slide1.png",
+      "name": "Hanoi National University of Education (HNUE).",
+      "description": "One of Vietnam's oldest universities, Hanoi National University of Education, has a unique graduation tradition where female graduates wear white Ao Dai. This attire symbolises purity, knowledge, and the enduring beauty of Vietnamese female teachers, highlighting the graduates' grace and achievements."
+    },
+    {
+      "backgroundImage": "./images/demo.jpg",
+      "name": "University of Languages and International Studies (ULIS)",
+      "description": "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu"
+    },
+    {
+      "backgroundImage": "./images/demo.jpg",
+      "name": "Fun Bug",
+      "description": "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu"
+    },
+    {
+      "backgroundImage": "./images/demo.jpg",
+      "name": "Fun Bug",
+      "description": "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu"
+    },
+    {
+      "backgroundImage": "./images/demo.jpg",
+      "name": "Fun Bug",
+      "description": "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu"
+    },
+    {
+      "backgroundImage": "./images/demo.jpg",
+      "name": "Fun Bug",
+      "description": "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu"
+    }
+  ]
+  

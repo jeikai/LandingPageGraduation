@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsline Express - Article</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #article-content {
+            white-space: pre-wrap;
+            /* Giữ nguyên dấu xuống dòng */
+            font-family: inherit;
+            /* Dùng font giống như các đoạn văn bản khác */
+            font-size: 24px;
+            /* Dùng kích thước chữ giống như các đoạn văn bản khác */
+            margin: 0;
+            /* Xóa margin mặc định của thẻ pre */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Newsline Express</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#all-news">All Articles</a></li>
+                <li><a href="index.html#politics">Politics</a></li>
+                <li><a href="index.html#life">Life</a></li>
+                <li><a href="index.html#business">Business</a></li>
+                <li><a href="index.html#entertainment">Entertainment</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="article-container">
+        <h2 id="article-title"></h2>
+        <p id="article-time"></p>
+        <p id="article-description"></p>
+        <img id="article-image" src="" alt="Article Image">
+        <div id="article-content"></div>
+    </div>
+
+    <footer>
+        <p>Contact Information: 123 Main Street, Anytown, USA | Phone: (123) 456-7890 | Email: info@newslineexpress.com
+        </p>
+        <p>© 2024 Newsline Express. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to get query parameter value by name
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Function to load article data based on ID
+        function loadArticleData() {
+            const articleId = getQueryParam('id');
+            if (articleId === null) {
+                console.error('No article ID provided');
+                return;
+            }
+
+            fetch('./data/newsData.json')
+                .then(response => response.json())
+                .then(data => {
+                    const article = data[articleId];
+                    if (!article) {
+                        console.error('Article not found');
+                        return;
+                    }
+
+                    document.getElementById('article-title').textContent = article.title;
+                    document.getElementById('article-time').textContent = new Date(article.time).toLocaleString();
+                    document.getElementById('article-description').textContent = article.description;
+
+                    // Handling multiple images
+                    if (Array.isArray(article.image)) {
+                        document.getElementById('article-image').src = article.image[0];
+
+                        let contentWithImages = article.content;
+                        for (let i = 1; i < article.image.length; i++) {
+                            contentWithImages = contentWithImages.replace('/image', `<img src="${article.image[i]}" alt="Article Image">`);
+                        }
+
+                        document.getElementById('article-content').innerHTML = contentWithImages;
+                    } else {
+                        document.getElementById('article-image').src = article.image;
+                        document.getElementById('article-content').textContent = article.content;
+                    }
+                })
+                .catch(error => console.error('Error loading article data:', error));
+        }
+
+        // Initial call to load article data
+        loadArticleData();
+    </script>
+</body>
+
+</html>

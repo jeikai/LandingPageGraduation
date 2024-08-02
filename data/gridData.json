@@ -1,0 +1,32 @@
+[
+  {
+    "image": "./images/demo.jpg",
+    "quote": "This is a memorable moment.",
+    "quotePosition": "left"
+  },
+  {
+    "image": "./images/demo.jpg",
+    "quote": "Forever cherished.",
+    "quotePosition": "right"
+  },
+  {
+    "image": "./images/demo.jpg",
+    "quote": "A time to remember.",
+    "quotePosition": "left"
+  },
+  {
+    "image": "./images/demo.jpg",
+    "quote": "A time to remember.",
+    "quotePosition": "left"
+  },
+  {
+    "image": "./images/demo.jpg",
+    "quote": "A time to remember.",
+    "quotePosition": "left"
+  },
+  {
+    "image": "./images/demo.jpg",
+    "quote": "A time to remember.",
+    "quotePosition": "left"
+  }
+]

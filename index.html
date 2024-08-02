@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsline Express</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Newsline Express</div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#all-news">All Articles</a></li>
+        <li  onclick="window.location.href='index.html#politics'"><a href="index.html#politics">Politics</a></li>
+        <li><a href="index.html#life">Life</a></li>
+        <li><a href="index.html#business">Business</a></li>
+        <li><a href="index.html#entertainment">Entertainment</a></li>
+        <li onclick="window.location.href='about_us.html'"><a href="about_us.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="parallax">Welcome to Newsline Express</div>
+
+  <section class="section" id="all-news">
+    <h2>All News</h2>
+    <div class="news-list">
+      <!-- News items will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <section class="section" id="politics-spotlight">
+    <h2>Politics Spotlight</h2>
+    <div class="spotlight-list politics">
+      <!-- Politics spotlight items will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <section class="section" id="life-spotlight">
+    <h2>Life Spotlight</h2>
+    <div class="spotlight-list life">
+      <!-- Life spotlight items will be injected here by JavaScript -->
+    </div>
+    <div class="spotlight-list life" style="margin-top: 20px;" onclick="window.location.href='final_assignment.html'">
+      <div class="spotlight-item animate show">
+        <img src="./images/demo.jpg" alt="spotlight-item Image">
+        <h3>Caps in the Air, Hearts Full of Hope: Reflections on University Graduation</h3>
+        <p>Graduation day is more than a ceremony - it's a whirlwind of emotions and memories. As caps soar into the
+          sky, graduates' hearts swell with pride, joy, and anticipation for the future. This moment marks the end of an
+          era and the dawn of new adventures in the labour market.</p>
+        <p class="news-time">7/15/2024, 12:00:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="business-spotlight">
+    <h2>Business Spotlight</h2>
+    <div class="spotlight-list business">
+      <!-- Business spotlight items will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <section class="section" id="entertainment-spotlight">
+    <h2>Entertainment Spotlight</h2>
+    <div class="spotlight-list entertainment">
+    </div>
+  </section>
+
+
+  <!-- <section class="section" id="stories">
+    <h2>Our story</h2>
+    <div class="music-container animate">
+      <img id="album-art" src="./images/demo.jpg" alt="Album Art">
+      <div class="song-details">
+        <h3 id="song-title">Let begin the story</h3>
+        <p id="song-author">ULIS in my heart</p>
+      </div>
+      <div class="music-controls">
+        <button id="play-pause-button" class="music-toggle">
+          <i id="play-pause-icon" class="fas fa-play"></i>
+        </button>
+        <div class="progress-container">
+          <div id="progress" class="progress-bar"></div>
+        </div>
+        <div class="time-display">
+          <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+        </div>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+        <audio id="audio-player" src="./assets/audio.mp3"></audio>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <div class="parallax_2">
+    <div class="quote-container">
+      <p class="quote">"Your inspirational quote goes here."</p>
+    </div>
+  </div> -->
+
+  <!-- <div class="container animate">
+    <div id="slide" class="slide-container">
+    </div>
+    <div class="buttons">
+      <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+      <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </div> -->
+
+  <footer>
+    <p>Contact Information: 123 Main Street, Anytown, USA | Phone: (123) 456-7890 | Email: info@newslineexpress.com</p>
+    <p>© 2024 Newsline Express. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
