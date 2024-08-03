@@ -78,6 +78,44 @@
             margin: 0;
             line-height: 1.6;
         }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
     </style>
 
 </head>
@@ -117,7 +155,7 @@
                     <img src="./images/bocau_2.png" alt="ULIS Image 2">
                 </div>
                 <div class="image image3">
-                    <img src="./images/bocau_3.png" alt="ULIS Image 3">
+                    <img style="height: 100%;" src="./images/bocau_3.png" alt="ULIS Image 3">
                 </div>
             </div>
             <div class="text">
@@ -128,45 +166,6 @@
         </div>
     </section>
 
-    <!-- 
-    <div class="hero">
-        <div class="hero-img">
-            <img src="./images/bocau_3.png" alt="Pixel Skincare">
-        </div>
-
-        <div class="hero-text">
-            <h1>Mom's bouquet</h1>
-            <p>Available in pink,red and yellow.</p>
-            <p>Send your thanks on Mother's Day with a bouquet of flowers.</p>
-        </div>
-    </div> -->
-
-    <!-- service Section -->
-    <!-- <section id="collections">
-        <div class="title title-right">
-            <span class="line line-right"></span>
-            <h3>Our Service</h3>
-        </div>
-        <div class="wrapper">
-            <a class="box box1" href="#">
-                <h4>wedding </h4>
-                <p>bouquet,decoration</p>   
-                <div class="box-overlay"></div>
-            </a>
-            <a class="box box2" href="#">
-                <h4>Customized</h4>
-                <p>dry flower customized</p>
-                <div class="box-overlay"></div>
-            </a>
-            <a class="box box3" href="#">
-                <h4>space decoration</h4>
-                <p>brand party,birthday party decoration</p>
-                <div class="box-overlay"></div>
-            </a>
-        </div>
-    </section> -->
-
-    <!-- popular Section -->
     <section id="abou">
         <div class="row">
             <img src="./images/sen.png" alt="" class="img1">
@@ -184,27 +183,52 @@
 
     </section>
 
-    <!-- weekly flower Section -->
     <section id="about">
         <div class="title title-left">
             <span class="line"></span>
-            <h3>weekly flower program</h3>
+            <h3>University of Economics and Business (UEB)</h3>
         </div>
         <div class="wrapper">
             <div class="text">
-                <p>Since 2021, Fungblue flower has been at the forefront of the move towards organic and natural life
-                    experience.</p>
-                <p>We hope that flowers not only stay in the flower fields in the suburbs and flower shops in the
-                    alleys, but can be delivered to your home more easily.</p>
-                <p>$2300/month.Order the weekly program to make life even more beautiful.</p>
+                <p>Mace - the protection</p>
+                <p>The traditional Mace of UEB symbolizes the Rector’s leadership, protection for the university and its
+                    students against negativity, and serves as a reminder to continue their academic and career
+                    pursuits.</p>
             </div>
         </div>
         <div class="video-wrapper">
-            <img src="https://img.onl/NV9rHN" alt="" class="img3">
+            <div class="slider">
+                <div class="slides">
+                    <img src="./images/quyen_truong.png" alt="Image 1">
+                    <img src="./images/nghi_le.png" alt="Image 2">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="about">
+        <div class="wrapper">
+            <div class="text">
+                <p>Bachelor gown</p>
+                <p>The colours of the graduation attire collectively represent a blend of clarity (teal robe), passion
+                    and determination (red trim), excellence and achievement (gold). They are carefully chosen to embody
+                    the qualities that the graduates have developed during their time at the university to carry into
+                    their future.</p>
+            </div>
+        </div>
+        <div class="video-wrapper">
+            <div class="slider">
+                <div class="slides">
+                    <img src="./images/tan_cu_nhan.png" alt="Image 1">
+                    <img src="./images/nhan_thuong.png" alt="Image 2">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </section>
     <section id="contact">
         <div class="wrapper">
             <div class="form-wrapper">
@@ -218,23 +242,47 @@
                 <h4>Stay In Touch With fungblue</h4>
                 <div class="wrapper">
                     <ul class="social-menu">
-                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://instagram.com" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://github.com" class="github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
-                    <a class="contact-footer contact-tel" href="#"><i class="fa fa-phone"
-                            aria-hidden="true"></i>001-283-4892</a>
-                    <a class="contact-footer contact-email" href="#"><i class="fa fa-envelope-o"
-                            aria-hidden="true"></i>Send an email</a>
                 </div>
-            </div>
-            <div class="copy-wrapper">
-                <h6><i class="fa fa-copyright" aria-hidden="true"></i> Theme, Logo, Product Design by <a
-                        href="https://codepen.io/ann_">Sandy</a></h6>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 fungblue. All rights reserved. Designed by Blue</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let sliders = document.querySelectorAll('.slider');
+
+            sliders.forEach((slider, index) => {
+                let currentIndex = 0;
+                const slides = slider.querySelector('.slides');
+                const totalSlides = slides.querySelectorAll('img').length;
+                const prevButton = slider.querySelector('.prev');
+                const nextButton = slider.querySelector('.next');
+
+                function moveSlide(n) {
+                    currentIndex += n;
+                    if (currentIndex < 0) {
+                        currentIndex = totalSlides - 1;
+                    } else if (currentIndex >= totalSlides) {
+                        currentIndex = 0;
+                    }
+                    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+                }
+
+                prevButton.addEventListener('click', () => moveSlide(-1));
+                nextButton.addEventListener('click', () => moveSlide(1));
+            });
+        });
+    </script>
 </body>
 
 </html>
