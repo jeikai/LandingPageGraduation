@@ -166,7 +166,6 @@ a.nav-link:focus{
 #featured .image img{
   width: 100%;
   height: auto;
-  padding-bottom: 2em;
 
 }
 .text{
@@ -344,6 +343,37 @@ input{
   font-weight: 700;
 }
 
+#featured .image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+#featured .image1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#featured .image2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#featured .image3 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  height: 100%; /* Ensure it spans the full height */
+}
+
+#featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire grid cell */
+  display: block;
+  border-radius: 5px;
+}
+
 /* Responsive Style */
 @media(min-width: 320px){
 
@@ -448,10 +478,10 @@ input{
     text-align: left;
     margin: 0 0 auto 4em;
   }
-  #featured .text{
+  /* #featured .text{
     flex: 1;
     order: 1;
-  }
+  } */
   #featured .image{
     flex: 1 0 12em;
     order: 2;
@@ -579,9 +609,9 @@ input{
   }
 
   /*  Featured Section  */
-  #featured .image{
+  /* #featured .image{
     margin-top: -4em;
-  }
+  } */
 
   /*  About Section  */
   #about .text{
