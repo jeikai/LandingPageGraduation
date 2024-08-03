@@ -229,6 +229,14 @@
             </div>
         </div>
     </section>
+    <div class="container animate">
+        <div id="slide" class="slide-container">
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
     <section id="contact">
         <div class="wrapper">
             <div class="form-wrapper">
@@ -252,6 +260,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 fungblue. All rights reserved. Designed by Blue</p>
@@ -282,6 +291,40 @@
                 nextButton.addEventListener('click', () => moveSlide(1));
             });
         });
+        // Function to load data from JSON file and display it
+        function loadSliderData(jsonFile, containerSelector) {
+            fetch(jsonFile)
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.querySelector(containerSelector);
+                    container.innerHTML = '';
+                    data.forEach(item => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.classList.add('item');
+                        itemDiv.style.backgroundImage = `url(${item.backgroundImage})`;
+                        itemDiv.innerHTML = `
+          <div class="content">
+            <div class="name">${item.name}</div>
+            <div class="des">${item.description}</div>
+          </div>
+        `;
+                        container.appendChild(itemDiv);
+                    });
+                })
+                .catch(error => console.error(`Error loading data from ${jsonFile}:`, error));
+        }
+
+        // Load data for Fun Bug slider
+        loadSliderData('./data/slideData.json', '#slide');
+        // Slider navigation logic
+        document.getElementById('next').onclick = function () {
+            let lists = document.querySelectorAll('.item');
+            document.getElementById('slide').appendChild(lists[0]);
+        }
+        document.getElementById('prev').onclick = function () {
+            let lists = document.querySelectorAll('.item');
+            document.getElementById('slide').prepend(lists[lists.length - 1]);
+        }
     </script>
 </body>
 
