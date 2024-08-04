@@ -141,7 +141,7 @@ function loadSliderData(jsonFile, containerSelector) {
         itemDiv.innerHTML = `
           <div class="content">
             <div class="name">${item.name}</div>
-            <div class="des">${item.description}</div>
+            <div class="des" style="background-color: rgba(242, 157, 252, 0.5);">${item.description}</div>
           </div>
         `;
         container.appendChild(itemDiv);
