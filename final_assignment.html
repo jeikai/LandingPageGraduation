@@ -73,6 +73,7 @@
             max-width: 600px;
             font-style: italic;
             font-size: 1.5em;
+            font-weight: bold;
             border-left: 4px solid #fff;
             padding-left: 20px;
             margin: 0;
@@ -80,6 +81,36 @@
             background-color: rgba(242, 157, 252, 0.5);
             /* Highlight color */
             color: rgb(255, 255, 255);
+        }
+
+        .parallax_3 {
+            background-image: url('./images/sp_2.png');
+            height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax_3 .quote-container {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            max-width: 400px;
+            background-color: rgba(242, 157, 252, 0.5);
+            padding: 10px;
+            text-shadow: none;
+            color: white;
+            border-left: 4px solid #fff;
+        }
+
+        .parallax_3 .quote {
+            margin: 0;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1em;
+            line-height: 1.4;
         }
 
         .slider {
@@ -145,8 +176,8 @@
         <div class="logo">Newsline Express</div>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html">All Articles</a></li>
+                <li onclick="window.location.href='index.html'"><a href="index.html">Home</a></li>
+                <li onclick="window.location.href='index.html'"><a href="index.html">All Articles</a></li>
                 <li onclick="window.location.href='politics.html'"><a href="politics.html">Politics</a></li>
                 <li onclick="window.location.href='life.html'"><a href="life.html">Life</a></li>
                 <li onclick="window.location.href='business.html'"><a href="business.html">Business</a></li>
@@ -157,7 +188,8 @@
         </nav>
     </header>
     <div class="heading">
-        <h3>Caps in the Air, Hearts Full of Hope: Reflections on University Graduation</h3>
+        <h3>Caps in the Air, Hearts Full of Hope: Reflections on University Graduation: Signatures of Graduation
+            Ceremonies</h3>
         <p class="description">Graduation day is more than a ceremony - it's a whirlwind of emotions and memories. As
             caps soar into the
             sky, graduates' hearts swell with pride, joy, and anticipation for the future. This moment marks the end of
@@ -166,14 +198,18 @@
         <p class="news-time">7/15/2024, 12:00:00 PM</p>
     </div>
 
-
     <div class="parallax_2">
-        <p class="quote">HNUE <br>One of Vietnam's oldest universities, Hanoi National University of Education,
-            has a unique graduation tradition where female graduates wear white Ao Dai. This attire symbolises purity,
-            knowledge, and the enduring beauty of Vietnamese female teachers, highlighting the graduates' grace and
-            achievements.</p>
+        <p class="quote">HNUE <br>One of Vietnam's oldest universities, Hanoi National University of Education, has a
+            unique graduation tradition where female graduates wear white Ao Dai.</p>
     </div>
 
+    <div class="parallax_3">
+        <div class="quote-container">
+            <p class="quote">“This traditional image is not only a hallmark of the university's graduation but also
+                embodies the Vietnamese tradition of "respecting teachers and valuing education." - Duong Do Phuong Vy -
+                QH2019 HNUE</p>
+        </div>
+    </div>
     <section id="featured">
         <div class="title title-left">
             <span class="line"></span>
@@ -182,38 +218,35 @@
         <div class="wrapper">
             <div class="image-grid">
                 <div class="image image1">
-                    <img src="./images/bocau_1.png" alt="ULIS Image 1">
+                    <img src="./images/sv_an_tam1.png" alt="ULIS Image 1">
                 </div>
                 <div class="image image2">
-                    <img src="./images/bocau_2.png" alt="ULIS Image 2">
+                    <img src="./images/sv_an_tam2.png" alt="ULIS Image 2">
                 </div>
                 <div class="image image3">
-                    <img style="height: 100%;" src="./images/bocau_3.png" alt="ULIS Image 3">
+                    <img src="./images/sv_an_tam3.png" alt="ULIS Image 3">
+                </div>
+                <div class="image image6">
+                    <img src="./images/sv_an_tam4.png" alt="ULIS Image 3">
                 </div>
             </div>
             <div class="text">
-                <h2>A bird would perch in a safe place</h2>
-                <p>Tranquill is the perfect word to describe ULIS’s graduation with dearing pigeons and a wonderful
-                    lotus pond on campus.</p>
+                <h2>“A bird would perch in a safe place” - Hoang Quynh Anh - QH2020 FELTE ULIS
+                </h2>
+                <p>Tranquill and diverse are the perfect words to describe ULIS’s graduation with dearing pigeons and a
+                    unique backdrop for each graduate.</p>
             </div>
         </div>
     </section>
 
-    <section id="abou">
-        <div class="row">
-            <img src="./images/sen.png" alt="" class="img1">
-            <h4>Lotus pond - Inner peace for students</h4>
-            <p>The favourite check-in destination of Ulisers is the lotus pond. Now that I have graduated, I will miss
-                this place so much.” - Hoang Quynh Anh, a Bachelor graduate of QH2020.</p>
-
+    <div class="container animate">
+        <div id="slide2" class="slide-container">
         </div>
-        <div class="row row2">
-            <img src="./images/dam_sen.png" alt="" class="img1 img2">
-            <h4>Lotus pond - Inner peace for students</h4>
-            <p>The favourite check-in destination of Ulisers is the lotus pond. Now that I have graduated, I will miss
-                this place so much.” - Hoang Quynh Anh, a Bachelor graduate of QH2020.</p>
+        <div class="buttons">
+            <button id="prev2"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next2"><i class="fa-solid fa-angle-right"></i></button>
         </div>
-    </section>
+    </div>
 
     <section id="about">
         <div class="title title-left">
@@ -222,10 +255,31 @@
         </div>
         <div class="wrapper">
             <div class="text">
-                <p>Mace - the protection</p>
-                <p>The traditional Mace of UEB symbolizes the Rector’s leadership, protection for the university and its
-                    students against negativity, and serves as a reminder to continue their academic and career
-                    pursuits.</p>
+                <p style="font-weight: bold;">UEB</p>
+                <p>UEB - the “royal” university has always been known for holding distinctive graduation ceremonies with
+                    the two signatures of the Parade led by the Rector’s Mace and the formal Bachelor gown.</p>
+            </div>
+        </div>
+        <div class="video-wrapper">
+            <div class="slider">
+                <div class="slides">
+                    <img src="./images/sếp 1.JPG" alt="Image 1">
+                    <img src="./images/Sếp 2.JPG" alt="Image 2">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="wrapper">
+            <div class="text">
+                <p style="font-weight: bold;">Graduation Parade</p>
+                <p>Having a parade of the rector and the ceremonial team has always been UEB’s tradition during the
+                    graduation ceremony. The parade is led by the Mace, which symbolizes the Rector’s leadership,
+                    protecting the university and its students against negativity and serving as a reminder to continue
+                    their pursuits.</p>
             </div>
         </div>
         <div class="video-wrapper">
@@ -243,7 +297,7 @@
     <section id="about">
         <div class="wrapper">
             <div class="text">
-                <p>Bachelor gown</p>
+                <p style="font-weight: bold;">Bachelor gown</p>
                 <p>The colours of the graduation attire collectively represent a blend of clarity (teal robe), passion
                     and determination (red trim), excellence and achievement (gold). They are carefully chosen to embody
                     the qualities that the graduates have developed during their time at the university to carry into
@@ -262,15 +316,14 @@
         </div>
     </section>
 
-
     <section id="featured">
         <div class="title title-left">
             <span class="line"></span>
             <h3>AOF</h3>
         </div>
         <div class="wrapper">
-            <div class="image-grid">
-                <div class="image image4">  
+            <div class="image-grid" style="grid-template-rows: 0fr 0fr;">
+                <div class="image image4">
                     <img style="height: 500px;" src="./images/Hvtc.png" alt="ULIS Image 1">
                 </div>
                 <div class="image image5">
@@ -298,7 +351,7 @@
         </div>
         <div class="video-wrapper">
             <video controls style="width: 50%;">
-                <source src="path/to/your/video.mp4" type="video/mp4">
+                <source src="./images/final.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -399,6 +452,18 @@
         document.getElementById('prev').onclick = function () {
             let lists = document.querySelectorAll('.item');
             document.getElementById('slide').prepend(lists[lists.length - 1]);
+        }
+
+        // Load data for Fun Bug slider
+        loadSliderData('./data/slideData2.json', '#slide2');
+        // Slider navigation logic
+        document.getElementById('next2').onclick = function () {
+            let lists = document.querySelectorAll('.item');
+            document.getElementById('slide2').appendChild(lists[0]);
+        }
+        document.getElementById('prev2').onclick = function () {
+            let lists = document.querySelectorAll('.item');
+            document.getElementById('slide2').prepend(lists[lists.length - 1]);
         }
     </script>
 </body>

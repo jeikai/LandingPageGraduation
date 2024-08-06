@@ -1,18 +1,17 @@
 [
-    {
-      "backgroundImage": "./images/slide1.png",
-      "name": "Hanoi National University of Education (HNUE).",
-      "description": "HNUE was founded in 1951. After declaring Vietnam’s independence, President Ho Chi Minh signed a decree establishing the College of Arts and Sciences in Hanoi, with its primary task being the training of secondary school literature teachers. A year later, on October 8, 1946, the President of the Democratic Republic of Vietnam issued Decree No. 194/SL, establishing the Faculty of Education. This faculty was responsible for training teachers for basic education, high schools, specialized secondary schools, experimental education, and vocational education nationwide. Until now, HNUE remains a prestigious university, training teachers of all levels. "
-    },
-    {
-      "backgroundImage": "./images/dam_sen.png",
-      "name": "University of Languages and International Studies (ULIS)",
-      "description": "Founded in 1955, ULIS is one of the nine member universities of Vietnam National University – Hanoi (VNU), a leading higher educational institution in Vietnam in terms of linguistics and applied language field. In addition to being a cradle for training in eight language disciplines, ULIS also owns a prestigious gifted high school and a high-quality middle school located in the heart of Hanoi."
-    },
-    {
-      "backgroundImage": "./images/quyen_truong.png",
-      "name": "University of Economics and Business (UEB)",
-      "description": "UEB is also one of the university members of Vietnam National University - Hanoi (VNU). The school has undergone numerous historical transitions, originating from the Faculty of Political Economy at the General University of Hanoi (the current VNU) in 1974. UEB is a pioneer institution in transitioning standard training programs to high-quality programs, developing training programs based on economic and technical norms to meet the increasing demands of undergraduate education in society."
-    }
-  ]
-  
+  {
+    "backgroundImage": "./images/slide1.png",
+    "name": "Hanoi National University of Education (HNUE).",
+    "description": "HNUE was founded in 1951. After declaring Vietnam’s independence, President Ho Chi Minh signed a decree establishing the College of Arts and Sciences in Hanoi, with its primary task being the training of secondary school literature teachers. A year later, on October 8, 1946, the President of the Democratic Republic of Vietnam issued Decree No. 194/SL, establishing the Faculty of Education. This faculty was responsible for training teachers for basic education, high schools, specialized secondary schools, experimental education, and vocational education nationwide. Until now, HNUE remains a prestigious university, training teachers of all levels. "
+  },
+  {
+    "backgroundImage": "./images/dam_sen.png",
+    "name": "University of Languages and International Studies (ULIS)",
+    "description": "Founded in 1955, ULIS is one of the nine member universities of Vietnam National University – Hanoi (VNU), a leading higher educational institution in Vietnam in terms of linguistics and applied language field. In addition to being a cradle for training in eight language disciplines, ULIS also owns a prestigious gifted high school and a high-quality middle school located in the heart of Hanoi."
+  },
+  {
+    "backgroundImage": "./images/quyen_truong.png",
+    "name": "University of Economics and Business (UEB)",
+    "description": "UEB is also one of the university members of Vietnam National University - Hanoi (VNU). The school has undergone numerous historical transitions, originating from the Faculty of Political Economy at the General University of Hanoi (the current VNU) in 1974. UEB is a pioneer institution in transitioning standard training programs to high-quality programs, developing training programs based on economic and technical norms to meet the increasing demands of undergraduate education in society."
+  }
+]
