@@ -483,18 +483,18 @@
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
             // Update view count
-            const response = await fetch('http://localhost:5000/views', { method: 'POST' });
+            const response = await fetch('https://server-landingpagegraduation.onrender.com/views', { method: 'POST' });
             const data = await response.json();
             document.getElementById('viewCount').innerText = data.views;
 
             // Get and display like count
-            const likeResponse = await fetch('http://localhost:5000/likes');
+            const likeResponse = await fetch('https://server-landingpagegraduation.onrender.com/likes');
             const likeData = await likeResponse.json();
             document.getElementById('likeCount').innerText = likeData.likes;
         });
 
         async function incrementLikes() {
-            const response = await fetch('http://localhost:5000/likes', { method: 'POST' });
+            const response = await fetch('https://server-landingpagegraduation.onrender.com/likes', { method: 'POST' });
             const data = await response.json();
             document.getElementById('likeCount').innerText = data.likes;
         }
