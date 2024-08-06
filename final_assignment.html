@@ -167,6 +167,18 @@
             font-size: 1em;
             padding: 10px;
         }
+
+        .view-count {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        .like-count {
+            font-size: 1.2em;
+            padding: 10px;
+            cursor: pointer;
+            color: #007BFF;
+        }
     </style>
 
 </head>
@@ -196,6 +208,8 @@
             an
             era and the dawn of new adventures in the labour market.</p>
         <p class="news-time">7/15/2024, 12:00:00 PM</p>
+        <div class="view-count"><i class="far fa-eye"></i> <span id="viewCount">0</span></div>
+        <div class="like-count" onclick="incrementLikes()">❤️ <span id="likeCount">0</span> Likes</div>
     </div>
 
     <div class="parallax_2">
@@ -464,6 +478,25 @@
         document.getElementById('prev2').onclick = function () {
             let lists = document.querySelectorAll('.item');
             document.getElementById('slide2').prepend(lists[lists.length - 1]);
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // Update view count
+            const response = await fetch('http://localhost:5000/views', { method: 'POST' });
+            const data = await response.json();
+            document.getElementById('viewCount').innerText = data.views;
+
+            // Get and display like count
+            const likeResponse = await fetch('http://localhost:5000/likes');
+            const likeData = await likeResponse.json();
+            document.getElementById('likeCount').innerText = likeData.likes;
+        });
+
+        async function incrementLikes() {
+            const response = await fetch('http://localhost:5000/likes', { method: 'POST' });
+            const data = await response.json();
+            document.getElementById('likeCount').innerText = data.likes;
         }
     </script>
 </body>
